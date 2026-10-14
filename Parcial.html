@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto | Desarrollo Web Full Stack</title>
+    <link rel="stylesheet" href="Parcial.css">
+
+    <!-- EmailJS v3 (la misma versión que usó el profesor en la Praxis) -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="Parcial.js" defer></script>
+</head>
+<body>
+    <main class="contenedor">
+        <section class="tarjeta">
+            <header class="encabezado">
+                <p class="etiqueta">Desarrollo Web Full Stack</p>
+                <h1>Escríbenos un mensaje</h1>
+                <p class="descripcion">
+                    Completa el formulario y recibirás una notificación en tu correo.
+                </p>
+            </header>
+
+            <form id="formulario" novalidate>
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre"
+                           placeholder="Ej. Juanito Pérez" autocomplete="name">
+                    <small class="error-campo" id="error-nombre"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="ejemplo@correo.com" autocomplete="email">
+                    <small class="error-campo" id="error-email"></small>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5"
+                              placeholder="Cuéntanos qué necesitas..."></textarea>
+                    <small class="error-campo" id="error-mensaje"></small>
+                </div>
+
+                <button type="submit" id="btnEnviar">Enviar mensaje</button>
+
+                <div id="estado" class="estado" role="status" aria-live="polite"></div>
+            </form>
+
+            <footer class="pie">
+                <p>Diseñado por Paloma · UNDC · 2026</p>
+            </footer>
+        </section>
+    </main>
+        <p>&copy; 2026 Mi sitio web.Todos los derechos reservados</p>
+        <nav><a href="index.html">index.html</a> <a href="html5.html">html5html</a> <a href="css.html">css.html</a>  <a href="./PERMANENCIA01.html">PERMANENCIA01</a></nav>
+    <a href="./javaScriptAsincromo.html">javaScriptAsincromo</a>  <a href="./Parcial.html">Parcial</a>
+    </footer>
+    <p>Diseñado por Paloma </p>
+</body>
+</html>
